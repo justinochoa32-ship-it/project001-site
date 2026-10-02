@@ -335,8 +335,13 @@ h2 {
 .impact-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 170px), 1fr));
+  align-items: start;
   gap: clamp(30px, 5vw, 56px);
   margin: clamp(78px, 12vw, 132px) 0;
+}
+
+.impact-item {
+  align-self: start;
 }
 
 .impact-item strong {
@@ -504,7 +509,9 @@ h2 {
 }
 
 .fineprint-media {
-  gap: clamp(52px, 8vw, 96px);
+  grid-template-columns: minmax(220px, 0.44fr) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(32px, 5vw, 58px);
 }
 
 .fineprint-media img {
@@ -512,11 +519,12 @@ h2 {
 }
 
 .fineprint-cover {
-  width: min(460px, 72vw);
+  width: min(100%, 360px);
+  justify-self: center;
 }
 
 .fineprint-spread {
-  width: min(1120px, 100%);
+  width: 100%;
 }
 
 .rising-media .rising-group img {
@@ -559,7 +567,7 @@ h2 {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 46%;
+  object-position: center top;
 }
 
 .back-link {
@@ -614,7 +622,8 @@ h2 {
 
   .project-row,
   .media-grid,
-  .gem-studio-pair {
+  .gem-studio-pair,
+  .fineprint-media {
     grid-template-columns: 1fr;
   }
 
