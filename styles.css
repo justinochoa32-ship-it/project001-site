@@ -509,7 +509,7 @@ h2 {
 }
 
 .fineprint-media {
-  grid-template-columns: minmax(220px, 0.44fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 0.703fr) minmax(0, 1.408fr);
   align-items: center;
   gap: clamp(32px, 5vw, 58px);
 }
@@ -519,8 +519,7 @@ h2 {
 }
 
 .fineprint-cover {
-  width: min(100%, 360px);
-  justify-self: center;
+  width: 100%;
 }
 
 .fineprint-spread {
